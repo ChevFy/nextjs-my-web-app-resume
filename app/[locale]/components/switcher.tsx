@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from "next/navigation"
-import { motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 
 
 export default function Switcher({ currentLocale } : { currentLocale : string })
@@ -14,6 +14,7 @@ export default function Switcher({ currentLocale } : { currentLocale : string })
   ];
 
   return (
+    <LayoutGroup id="switcher-group">
     <div className="flex p-1 bg-gray-900/80 backdrop-blur-md rounded-2xl border border-white/10 w-fit">
       {languages.map((lang) => (
         <button key={lang.id}
@@ -26,7 +27,7 @@ export default function Switcher({ currentLocale } : { currentLocale : string })
 
           {currentLocale === lang.id && (
             <motion.div
-              layoutId="activeTab"
+              layoutId="switcherTab"
               className={`absolute inset-0 rounded-xl shadow-lg ${lang.activeColor}`}
               transition={{ type: "spring", bounce: 0.2, duration: 0.1 }}
             />
@@ -34,6 +35,7 @@ export default function Switcher({ currentLocale } : { currentLocale : string })
         </button>
       ))}
     </div>
+    </LayoutGroup>
             )
 }
 

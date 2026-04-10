@@ -3,7 +3,10 @@
     "lastName" : "พงศ์ธำรงศักดิ์",
     "describtion" : "Lorem ipsum dolor นั่ง amet consectetur adipisicing elit. อะดิพิสจี ราวกับว่าความเกลียดชังของเรามักปรากฏอยู่ในความทุกข์ยากอยู่เสมอ",
 
-    "navbarHome" : "หน้าแรก",
+    "navbarHome" : "โปรเจค",
     "navbarService" : "บริการ",
-    "navbarContact" : "ติดต่อ"
+    "navbarContact" : "ติดต่อ",
+
+    "education" : "การศึกษา",
+    "experience" : "ประสบการณ์"
 }

@@ -3,7 +3,10 @@
     "lastName" : "Pongtamrongsak",
     "describtion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi ullam nostrum provident saepe, odio molestiae praesentium.",
 
-    "navbarHome" : "Home",
+    "navbarHome" : "Project",
     "navbarService" : "Services",
-    "navbarContact" : "Contact"
+    "navbarContact" : "Contact",
+
+    "education" : "Education",
+    "experience" : "Experience"
 }
