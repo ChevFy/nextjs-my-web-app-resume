@@ -1,12 +1,61 @@
 {
-    "firstName" : "Nantapong",
-    "lastName" : "Pongtamrongsak",
-    "describtion" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi ullam nostrum provident saepe, odio molestiae praesentium.",
-
-    "navbarHome" : "Project",
-    "navbarService" : "Services",
-    "navbarContact" : "Contact",
-
-    "education" : "Education",
-    "experience" : "Experience"
+    "firstName": "Nantapong",
+    "lastName": "Pongtamrongsak",
+    "describtion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi ullam nostrum provident saepe, odio molestiae praesentium.",
+    "navbarHome": "Project",
+    "navbarService": "Services",
+    "navbarContact": "Contact",
+    "education": "Education",
+    "experience": "Experience",
+    "educations": [
+        {
+            "level": "Bachelor of Engineering",
+            "school_name": "King Mongkut's Institute of Technology Ladkrabang",
+            "major": "Computer Engineering",
+            "location": "Bangkok, Thailand"
+        },
+        {
+            "level": "Coding School",
+            "school_name": "42 Bangkok",
+            "major": "Computer Programming",
+            "location": "Bangkok, Thailand"
+        },
+        {
+            "level": "High School",
+            "school_name": "Pai Wittayakarn School",
+            "major": "Science-Mathematics",
+            "location": "Pai, Mae Hong Son, Thailand"
+        }
+    ],
+    "experiences": [
+        {
+            "description": [
+                "Developed a FastAPI backend for news analysis, using embeddings to assess credibility and detect fake news.",
+                "Built a chatbot that analyzes user-submitted news and provides real-time fake news verification."
+            ],
+            "year_started": "2025 Oct",
+            "year_ended": "2025 Nov",
+            "location": "Mae Hong Son, TH"
+        },
+        {
+            "description": [
+                "Collaborated in a startup developing AI-based health risk assessment technology and a telemedicine platform.",
+                "Acted as a company representative in meetings, delivering presentations on technology solutions.",
+                "Coordinated testing and validation, ensuring compliance with industry standards."
+            ],
+            "year_started": "2025 June",
+            "year_ended": "2025 Oct",
+            "location": "Bangkok, TH"
+        },
+        {
+            "description": [
+                "Tested web application functionality to ensure compliance with defined standards.",
+                "Reported system issues and defects to the development team for further improvement."
+            ],
+            "year_started": "2023 April",
+            "year_ended": "2023 June",
+            "location": "Mae Hong Son, TH"
+        }
+    ],
+    "present": "Present"
 }

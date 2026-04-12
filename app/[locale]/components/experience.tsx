@@ -1,20 +1,21 @@
 "use client"
 
 import { useState } from "react"
+import ExpEduCard from "./expEducard";
+import ExperienceCard from "./expexpCard";
+import {
+    createEducationItems,
+    createExperienceChoices,
+    createExperienceItems,
+    type ExperienceDictionary,
+} from "./experience-data";
 
-interface dataTextEXP {
-    education: string;
-    experience: string;
-}
-
-export default function Experience({ dataText } : { dataText : dataTextEXP }  )
+export default function Experience({ dataText }: { dataText: ExperienceDictionary })
 {
     
-    const expChoice  = [
-        { id : "edu" , label : dataText.education },
-        { id : "exp" , label : dataText.experience } 
-    ]
-    
+    const expChoice = createExperienceChoices(dataText)
+    const educations = createEducationItems(dataText)
+    const experiences = createExperienceItems(dataText)
     
     const [currentChoice, setCurrentChoice] = useState(expChoice[0].id)
 
@@ -29,9 +30,13 @@ export default function Experience({ dataText } : { dataText : dataTextEXP }  )
                 </button>
             ))}
         </div>
-        <div>
-            
-            
+       <div className="w-full flex flex-col mt-8 gap-6">
+            {currentChoice === "edu" && educations.map((edu, index) => (
+                <ExpEduCard key={edu.id} data={edu} index={index} />
+            ))}
+            {currentChoice === "exp" && experiences.map((exp, index) => (
+                <ExperienceCard key={exp.id} data={exp} index={index} />
+            ))}
         </div>
     </div>
     </>)
