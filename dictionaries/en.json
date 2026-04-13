@@ -96,7 +96,7 @@
             "name" : "Pai Fire Prediction (In Development)",
             "description" : "A predictive model for assessing forest fire risk areas using the XGBoost algorithm.",
             "techstack" : ["Python" , "Pandas" , "Numpy" , "Scikit-learn"],
-            "img" : "",
+            "img" : "/images/projectimg/pai.png",
             "src" : ""
 
         },

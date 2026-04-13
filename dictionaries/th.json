@@ -99,7 +99,7 @@
             "name" : "Pai Fire Prediction (In Development)",
             "description" : "Model ทำนายพื้นที่ความเสี่ยงโอกาสการเกิดไฟป่า โดยใช้อัลกอริทึม XGboost ",
             "techstack" : ["Python" , "Pandas" , "Numpy" , "Scikit-learn"],
-            "img" : "",
+            "img" : "public/images/projectimg/pai.png",
             "src" : ""
 
         },
