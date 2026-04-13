@@ -29,10 +29,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:github-loop.svg?color=%23ffffff"  alt="GitHub"  />
             </a>
 
-            <a href="https://www.instagram.com/chevfy._" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
-              <Image width={40}  height={40}  loading="eager" src="https://api.iconify.design/line-md:instagram.svg?color=%23ffffff"  alt="Instagram"  />
-            </a>
-
             <a href="https://www.facebook.com/koonchevychpai123" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:facebook.svg?color=%23ffffff"  alt="Facebook"  />
             </a>
@@ -48,7 +44,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-xl bg-blue-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
             >
-              View Resume
+              {dataText.contactActionResume}
             </a>
           </div>
         </div>

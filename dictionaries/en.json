@@ -5,6 +5,38 @@
     "navbarProject": "Project",
     "navbarService": "Services",
     "navbarContact": "Contact",
+    "servicesTitle": "My Services",
+    "services": [
+        {
+            "title": "Mathematics Summary (High School)",
+            "description": "Comprehensive study guide covering all high school mathematics topics with detailed explanations and problem solutions.",
+            "price": "Starting at: 29 Baht",
+            "features": ["Complete high school mathematics coverage", "Detailed explanations", "Key formulas and summary"]
+        },
+        {
+            "title": "Thailand University Admissions Planning",
+            "description": "Comprehensive consulting and planning service for university entrance examination preparation for Dek70, Dek71, and Dek72 students.",
+            "features": ["Strengths and weaknesses analysis", "Customized preparation plan", "Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"]
+        },
+        {
+            "title": "Landing Page Development",
+            "description": "Design and develop stunning, high-performance landing pages for your business or project.",
+            "features": ["Modern and attractive design", "Fully responsive", "SEO optimized", "Performance tested and verified"]
+        }
+    ],
+    "servicesCtaDescription": "Contact me to discuss your service needs and plan our collaboration.",
+    "servicesCtaButton": "Contact Now",
+    "contactTitle": "Contact Me",
+    "contactCardTitle": "Get In Touch",
+    "contactCardDescription": "I am open to internship opportunities , Freelance , backend or frontend Development, AI-focused projects, and education-related collaborations.",
+    "contactEmailLabel": "Email",
+    "contactPhoneLabel": "Phone",
+    "contactLocationLabel": "Location",
+    "contactActionTitle": "Quick Actions",
+    "contactActionDescription": "Send me a message or review my profile and experience through my resume.",
+    "contactActionLine": "Send Line",
+    "contactActionMail": "Send Email",
+    "contactActionResume": "View Resume",
     "education": "Education",
     "experience": "Experience",
     "educations": [
@@ -60,6 +92,22 @@
     "present": "Present",
     "myproject" : "My Project", 
     "projects" : [
+               {
+            "name" : "Pai Fire Prediction (In Development)",
+            "description" : "A predictive model for assessing forest fire risk areas using the XGBoost algorithm.",
+            "techstack" : ["Python" , "Pandas" , "Numpy" , "Scikit-learn"],
+            "img" : "",
+            "src" : ""
+
+        },
+        {
+            "name" : "E-Learning & Digital Marketplace (In Development)",
+            "description" : "A web application featuring video-based online courses and a digital marketplace for selling summary study sheets.",
+            "techstack" : ["NextJS"],
+            "img" : "",
+            "src" : ""
+
+        },
         {
             "name" : "Where We go",
             "description" : "Where We Go is a travel-focused web application we developed to solve the classic dilemmas: 'Where should we go tonight?' or 'What should we do for our next trip?' The platform focuses on helping users discover and manage travel destinations or check-in spots with ease. Developed as part of a Web Application Development course, we used the MVC .NET framework to simulate a real-world development process, building everything from the front-end interface to the back-end infrastructure.",

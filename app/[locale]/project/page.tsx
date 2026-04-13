@@ -14,8 +14,8 @@ export default async function project({ params }: { params: { locale: string } }
     return (<>
          <Navbar locale={locale} />
 
-        <section className="flex flex-col justify-center bg-blue-950/50 w-full h-300">
-            <div className="flex mt-30 items-center flex-col text-white text-3xl font-bold"> 
+        <section className="flex flex-col  bg-blue-950/50 w-full h-400">
+            <div className="flex  items-center flex-col text-white text-3xl font-bold mt-30"> 
                 <h1>{dataText.myproject}</h1>
                 <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>
             </div>
