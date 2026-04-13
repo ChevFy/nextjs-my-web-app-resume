@@ -1,5 +1,4 @@
 "use client"
-import { motion } from "framer-motion"
 import TechstackCard from "./techstackCard"
 
 export default function TechStack()
