@@ -52,7 +52,7 @@ export function createEducationItems(dataText: ExperienceDictionary) {
             level: dataText.educations[2].level,
             school_name: dataText.educations[2].school_name,
             major: dataText.educations[2].major,
-            year_started: "2020",
+            year_started: "2021",
             year_ended: "2023",
             gpa: 3.96,
             location: dataText.educations[2].location,

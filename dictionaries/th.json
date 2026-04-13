@@ -1,8 +1,8 @@
 {
     "firstName": "นันทพงศ์",
     "lastName": "พงศ์ธำรงศักดิ์",
-    "describtion": "Lorem ipsum dolor นั่ง amet consectetur adipisicing elit. อะดิพิสจี ราวกับว่าความเกลียดชังของเรามักปรากฏอยู่ในความทุกข์ยากอยู่เสมอ",
-    "navbarHome": "โปรเจค",
+    "describtion": "นักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในการพัฒนาระบบ Low-level และการประยุกต์ใช้ AI ในงาน Backend เพื่อสร้างนวัตกรรมที่พัฒนาสังคม ควบคู่ไปกับการเป็นติวเตอร์วิชาคณิตศาสตร์และฟิสิกส์ รวมถึงเป็นที่ปรึกษาด้านการวางแผนสอบเข้ามหาวิทยาลัย  และพัฒนาศักยภาพของผู้เรียนเพื่อสร้างโอกาสทางการศึกษาที่เท่าเทียม",
+    "navbarProject": "โปรเจค",
     "navbarService": "บริการ",
     "navbarContact": "ติดต่อ",
     "education": "การศึกษา",
@@ -60,5 +60,24 @@
             "location": "แม่ฮ่องสอน, ไทย"
         }
     ],
-    "present": "ปัจจุบัน"
+    "present": "ปัจจุบัน",
+    "myproject" : "โปรเจคของฉัน",
+    "projects" : [
+        {
+            "name" : "Where We Go",
+            "description" : "Where We Go เป็นเว็บแอปพลิเคชันท่องเที่ยวที่พัฒนาขึ้นมาเพื่อแก้ปัญหา \"เย็นนี้ไปไหนดี?\" หรือ \"ทริปหน้าจะไปทำอะไรดี?\" โดยมุ่งเน้นให้ผู้ใช้งานสามารถค้นหาและจัดการสถานที่ท่องเที่ยวหรือจุดเช็กอินได้ง่ายขึ้น พัฒนาในรายวิชา Web Application Development ด้วยสถาปัตยกรรม MVC .NET เพื่อจำลองการสร้างระบบเว็บจริงทั้งฝั่ง Frontend และ Backend",
+            "techstack" : ["MVC .NET" , "postgreSQL"],
+            "img" : "/images/projectimg/wherewego.png",
+            "src" : "https://github.com/ChevFy/where-we-go"
+
+        },
+         {
+            "name" : "Simple MERN CRUD App",
+            "description" : "โปรเจคนี้เป็นส่วนหนึ่งของวิชา System Platform  โจทย์หลักคือการเรียนรู้วิธีการจัดการระบบ Backend Infrastructure",
+            "techstack" : ["React" , "Express" , "MongoDB"],
+            "img" : "",
+            "src" : "https://github.com/ChevFy/SPA"
+         }
+    ]
+
 }

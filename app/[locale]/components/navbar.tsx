@@ -16,8 +16,8 @@ export default async function Navbar({ locale }: { locale: string }) {
            
             <div className="flex gap-6 items-center">
                 <div className="hover:text-orange-400 cursor-pointer transition-colors">{dataText.navbarService}</div>
-                <a  href={`/${locale}`} className="px-3 py-1 bg-blue-500 hover:bg-blue-600 rounded transition-colors">
-                    {dataText.navbarHome}
+                <a  href={`/${locale}/project`} className="px-3 py-1 bg-blue-500 hover:bg-blue-600 rounded transition-colors">
+                    {dataText.navbarProject}
                 </a>
                 <div className="hover:text-orange-400 cursor-pointer transition-colors">{dataText.navbarContact}</div>
             </div>

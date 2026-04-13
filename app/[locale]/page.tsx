@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Experience from "./components/experience";
 import { getDictionary } from "./layout";
+import TechStack from "./components/techstack";
 
 export default async function Home({ params }: { params: { locale: string } }) {
 
@@ -13,15 +14,16 @@ export default async function Home({ params }: { params: { locale: string } }) {
       <Navbar locale={locale} />
 
       {/* Me Section */}
-      <section className="bg-blue-950/50 min-h-screen flex flex-col md:flex-row items-center px-6 sm:px-8 lg:px-20 pt-24 md:pt-0">
+      <section className="bg-blue-950/50  min-h-screen flex flex-col md:flex-row items-center px-6 sm:px-8 lg:px-20 pt-24 ">
         
-        <div className="flex flex-col w-full md:w-1/2 justify-center items-center md:items-start py-10 md:py-20 text-center md:text-left">
+        <div className="flex flex-col w-full md:ml-30 md:w-1/2 justify-center items-center md:items-start py-10 md:py-20 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
             {dataText.firstName} <br /> <span className="text-blue-400">{dataText.lastName}</span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg">
+          <p className="text-md sm:text-xl text-gray-300 mb-4 max-w-lg">
             {dataText.describtion}
           </p>
+
           <div className="flex flex-row gap-6 mt-4 justify-center md:justify-start">
             <a href="https://github.com/ChevFy" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:github-loop.svg?color=%23ffffff"  alt="GitHub"  />
@@ -34,6 +36,20 @@ export default async function Home({ params }: { params: { locale: string } }) {
             <a href="https://www.facebook.com/koonchevychpai123" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:facebook.svg?color=%23ffffff"  alt="Facebook"  />
             </a>
+
+              <a href="https://www.tiktok.com/@ch__ev_fy/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
+              <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:tiktok.svg?color=%23ffffff"  alt="Facebook"  />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://smallpdf.com/file#s=be201c89-9c27-4129-9e0b-197a6ecbfb19"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-xl bg-blue-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
+            >
+              View Resume
+            </a>
           </div>
         </div>
 
@@ -45,10 +61,14 @@ export default async function Home({ params }: { params: { locale: string } }) {
       </section>
 
       {/* Experience Section */}
-      <section className="bg-blue-950/30 min-h-screen flex flex-col items-center gap-5 py-16 md:py-24">
+      <section className="bg-blue-950/50 min-h-screen flex flex-col items-center gap-5 py-16 md:py-24">
           <Experience dataText={dataText}/> 
       </section>
       
+      <section className="flex justify-center bg-blue-950/50 w-full h-150">
+        <TechStack/>
+      </section>
+
     </>
   );
 }

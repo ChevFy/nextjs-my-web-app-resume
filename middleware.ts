@@ -1,24 +1,25 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const locales =  [ "en", "th"]
+const locales = ["en", "th"]
+const defaultLocale = 'en'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl 
   
+  // 1. ตรวจสอบว่ามี locale อยู่ใน path หรือยัง
   const pathHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
 
   if (pathHasLocale) return
 
-  const locale = 'en'
-  request.nextUrl.pathname = `/${locale}${pathname}`
 
-  return NextResponse.redirect(request.nextUrl)
+  request.nextUrl.pathname = `/${defaultLocale}${pathname}`
+  
+  return NextResponse.rewrite(request.nextUrl)
 }
  
-// See "Matching Paths" below to learn more
 export const config = {
   matcher: '/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)',
 }
