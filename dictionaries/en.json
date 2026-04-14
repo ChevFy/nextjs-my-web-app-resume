@@ -122,5 +122,6 @@
             "img" : "",
             "src" : "https://github.com/ChevFy/SPA"
          }
-    ]
+    ],
+    "footer" : "This website was built with Next.js in 2026."
 }

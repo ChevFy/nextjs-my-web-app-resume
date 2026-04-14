@@ -15,11 +15,11 @@ export default function Switcher({ currentLocale } : { currentLocale : string })
 
   return (
     <LayoutGroup id="switcher-group">
-    <div className="flex p-1 bg-gray-900/80 backdrop-blur-md rounded-2xl border border-white/10 w-fit">
+    <div className="flex p-0.5 bg-gray-900/80 backdrop-blur-md rounded-xl border border-white/10 w-fit">
       {languages.map((lang) => (
         <button key={lang.id}
           onClick={() => router.push(`/${lang.id}`, { scroll: false }) }
-          className="relative px-4 py-2 text-sm font-bold transition-colors duration-300 focus:outline-none"
+          className="relative px-3 py-1.5 text-xs sm:text-sm font-bold transition-colors duration-300 focus:outline-none"
         >
           <span className={`relative z-10 ${currentLocale === lang.id ? "text-white" : "text-gray-400 hover:text-gray-200"}`}>
             {lang.label}

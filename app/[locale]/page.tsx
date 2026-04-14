@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Experience from "./components/experience";
 import { getDictionary } from "./layout";
 import TechStack from "./components/techstack";
+import Footer from "./components/footer";
 
 export default async function Home({ params }: { params: { locale: string } }) {
 
@@ -65,6 +66,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
         <TechStack/>
       </section>
 
+    <Footer dataText={dataText}/>
     </>
   );
 }
