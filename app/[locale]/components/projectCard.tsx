@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type ProjectItem = {
   name: string;
   description: string;
@@ -19,9 +21,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
           {project.img ? (
             <a key={index} href={project.src} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-              <img
+              <Image
                 src={project.img}
                 alt={project.name}
+                fill
                 className="w-full h-full object-cover cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110"
               />
             </a>
