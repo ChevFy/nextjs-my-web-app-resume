@@ -4,6 +4,7 @@ import Experience from "./components/experience";
 import { getDictionary } from "./layout";
 import TechStack from "./components/techstack";
 import Footer from "./components/footer";
+import Link from "next/link"
 
 export default async function Home({ params }: { params: { locale: string } }) {
 
@@ -26,27 +27,27 @@ export default async function Home({ params }: { params: { locale: string } }) {
           </p>
 
           <div className="flex flex-row gap-6 mt-4 justify-center md:justify-start">
-            <a href="https://github.com/ChevFy" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
+            <Link href="https://github.com/ChevFy" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:github-loop.svg?color=%23ffffff"  alt="GitHub"  />
-            </a>
+            </Link>
 
-            <a href="https://www.facebook.com/koonchevychpai123" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
+            <Link href="https://www.facebook.com/koonchevychpai123" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:facebook.svg?color=%23ffffff"  alt="Facebook"  />
-            </a>
+            </Link>
 
-              <a href="https://www.tiktok.com/@ch__ev_fy/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
+              <Link href="https://www.tiktok.com/@ch__ev_fy/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:opacity-80 transition-all">
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md:tiktok.svg?color=%23ffffff"  alt="Facebook"  />
-            </a>
+            </Link>
           </div>
           <div>
-            <a
+            <Link
               href="https://smallpdf.com/file#s=be201c89-9c27-4129-9e0b-197a6ecbfb19"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-xl bg-blue-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
             >
               {dataText.contactActionResume}
-            </a>
+            </Link>
           </div>
         </div>
 

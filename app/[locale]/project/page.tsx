@@ -4,6 +4,7 @@ import { getDictionary } from "../layout";
 
 
 
+
 export default async function project({ params }: { params: { locale: string } })
 {
     const { locale } = await params ;

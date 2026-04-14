@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import { getDictionary } from "../layout";
+import Link from 'next/link'
 
 export default async function ContactPage({ params }: { params: { locale: string } }) {
   const { locale } = await params;
@@ -58,25 +59,25 @@ export default async function ContactPage({ params }: { params: { locale: string
               </div>
 
               <div className="mt-8 flex flex-col gap-3">
-                  <a
+                  <Link
                   href="https://line.me/ti/p/ug_Pi9pHKx"
                   className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
                 > {dataText.contactActionLine}
-                </a>
-                <a
+                </Link>
+                <Link
                   href="mailto:nantapong.pt@gmail.com"
                   className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
                 >
                   {dataText.contactActionMail}
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://smallpdf.com/file#s=be201c89-9c27-4129-9e0b-197a6ecbfb19"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl border border-blue-400/40 bg-blue-500/10 px-4 py-3 text-base font-semibold text-blue-200 transition-all hover:bg-blue-500/20"
                 >
                   {dataText.contactActionResume}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

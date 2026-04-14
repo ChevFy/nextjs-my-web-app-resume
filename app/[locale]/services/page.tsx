@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import ServiceCard from "../components/serviceCard";
+import Link from 'next/link'
 import { getDictionary } from "../layout";
 
 export default async function ServicesPage({
@@ -21,7 +22,7 @@ export default async function ServicesPage({
             <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>
           </div>
 
-        <a href={`/${locale}/contact`}>
+        <Link href={`/${locale}/contact`}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {dataText.services.map((service: {
               title: string;
@@ -38,7 +39,7 @@ export default async function ServicesPage({
               />
             ))}
           </div>
-        </a>
+        </Link>
 
         </div>
       </section>

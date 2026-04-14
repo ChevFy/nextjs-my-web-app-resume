@@ -27,7 +27,7 @@ export default function TechStack()
     { id: "react", name: "React", img: "https://skillicons.dev/icons?i=react" },
     { id: "numpy", name: "numpy", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" },
     { id: "pandas", name: "NextJS", img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original-wordmark.svg" },
-    { id: "scikit-learn", name: "scikit-learn", img: "https://url-shortener.me/KMEX" },
+    { id: "scikit-learn", name: "scikit-learn", img: "https://skillicons.dev/icons?i=scikitlearn" },
     { id: "mcp", name: "mcp", img: "https://go-skill-icons.vercel.app/api/icons?i=mcp" }
 
     ];
@@ -49,7 +49,7 @@ export default function TechStack()
         <div className="flex flex-col h-100 w-3/4 p-4">
             <div className="flex flex-col w-full text-2xl font-bold justify-center text-white">
                 <div className="flex justify-center">
-                    <h3>My TechStack</h3>
+                    <h3>My Skills</h3>
                 </div>
                 <div className="h-1 w-20 bg-blue-600 mx-auto mt-2 rounded-full"></div>
             </div>
