@@ -121,6 +121,13 @@
             "techstack" : ["React" , "Express" , "MongoDB"],
             "img" : "",
             "src" : "https://github.com/ChevFy/SPA"
+         },
+        {
+            "name" : "Ebay Clone",
+            "description" : "This project is a simplified clone of the eBay website, developed by KMITL students as part of an Object-Oriented Programming (OOP) course assignment.",
+            "techstack" : ["Python" , "FastHTML" ],
+            "img" : "/images/projectimg/ebay.png",
+            "src" : "https://github.com/ChevFy/EBAY_CLONE"
          }
     ],
     "footer" : "This website was built with Next.js in 2026."

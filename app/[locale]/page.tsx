@@ -6,7 +6,7 @@ import TechStack from "./components/techstack";
 import Footer from "./components/footer";
 import Link from "next/link"
 
-export default async function Home({ params }: { params: { locale: string } }) {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
 
   const { locale } = await params ;
   const dataText  = await getDictionary(locale as "th" | "en") 

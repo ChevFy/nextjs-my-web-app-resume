@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import { getDictionary } from "../layout";
 import Link from 'next/link'
 
-export default async function ContactPage({ params }: { params: { locale: string } }) {
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const dataText = await getDictionary(locale as "th" | "en");
 

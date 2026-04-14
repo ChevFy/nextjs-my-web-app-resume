@@ -20,11 +20,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="relative w-full h-64 md:h-full min-h-56 rounded-2xl overflow-hidden bg-slate-800/70 border border-transparent shadow-xl group-hover:scale-105 group-hover:border-blue-500/50 group-hover:shadow-[0_0_35px_rgba(59,130,246,0.35)] transition-all duration-300 ease-out">
 
           {project.img ? (
-            <a key={index} href={project.src} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <a key={index} href={project.src} target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
               <Image
                 src={project.img}
                 alt={project.name}
                 fill
+                sizes="(max-width: 768px) 100vw, 42vw"
+                loading={index === 0 ? "eager" : "lazy"}
                 className="w-full h-full object-cover cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110"
               />
             </a>

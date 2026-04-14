@@ -6,7 +6,7 @@ import { getDictionary } from "../layout";
 export default async function ServicesPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   const dataText = await getDictionary(locale as "th" | "en");

@@ -7,13 +7,15 @@ const dictionaries = {
 
 export const getDictionary = async (locale: 'en' | 'th') => dictionaries[locale]()
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
   return (
     <html
       lang={locale}
