@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nextjs About Me
+
+เว็บพอร์ตโฟลิโอ/แนะนำตัวส่วนตัว พัฒนาด้วย Next.js (App Router) รองรับ 2 ภาษา (ไทย/อังกฤษ) พร้อมหน้า Home, Projects, Services และ Contact
+
+## AI Note
+
+README ฉบับนี้จัดทำด้วย AI (GitHub Copilot)
+
+## Features
+
+- รองรับหลายภาษา: `en`, `th` ด้วย dictionary JSON
+- Routing แบบ locale ผ่าน path เช่น `/en`, `/th`
+- Middleware เปลี่ยนเส้นทางไป locale เริ่มต้นอัตโนมัติ (`en`)
+- หน้าแสดงข้อมูลหลัก:
+	- Home (โปรไฟล์, ประสบการณ์, Tech Stack)
+	- Projects
+	- Services
+	- Contact
+- UI แบบ responsive และมี animation ด้วย `framer-motion`
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+
+## Project Structure
+
+```text
+app/
+	[locale]/
+		layout.tsx
+		page.tsx
+		globals.css
+		components/
+		contact/page.tsx
+		project/page.tsx
+		services/page.tsx
+dictionaries/
+	en.json
+	th.json
+middleware.ts
+```
 
 ## Getting Started
 
-First, run the development server:
+### 1) Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2) Run development server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+เปิดเบราว์เซอร์ที่ `http://localhost:3000`
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm dev    # Run dev server
+pnpm build  # Build for production
+pnpm start  # Start production server
+pnpm lint   # Run ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Locale Behavior
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- หากเข้า URL ที่ไม่มี locale เช่น `/project` ระบบจะ rewrite ไปที่ `/en/project`
+- หากระบุ locale แล้ว เช่น `/th` หรือ `/en/services` จะใช้งานตามภาษานั้นทันที
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+สามารถ deploy ได้บน Vercel หรือแพลตฟอร์มที่รองรับ Next.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ตัวอย่างบน Vercel:
+
+```bash
+pnpm build
+```
+
+จากนั้นตั้งค่า start command เป็น:
+
+```bash
+pnpm start
+```
