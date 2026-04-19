@@ -120,11 +120,11 @@
 
         },
          {
-            "name" : "Simple MERN CRUD App",
-            "description" : "โปรเจคนี้เป็นส่วนหนึ่งของวิชา System Platform  โจทย์หลักคือการเรียนรู้วิธีการจัดการระบบ Backend Infrastructure",
-            "techstack" : ["React" , "Express" , "MongoDB"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/SPA"
+            "name" : "180IQ Web",
+            "description" : "Vibe code project ด้วย Claude Sonnet",
+            "techstack" : ["NextJS" , "Claude"],
+            "img" : "/images/projectimg/180.png",
+            "src" : "https://180-iq-web.vercel.app/"
          },
         {
             "name" : "Ebay Clone",

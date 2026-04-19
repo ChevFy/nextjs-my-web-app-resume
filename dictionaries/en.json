@@ -116,11 +116,11 @@
             "src" : "https://github.com/ChevFy/where-we-go"
         },
          {
-            "name" : "Simple MERN CRUD App",
-            "description" : "This project is part of the System Platform course. Our core objective isn't just standard web development, but mastering backend infrastructure.",
-            "techstack" : ["React" , "Express" , "MongoDB"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/SPA"
+            "name" : "180IQ Web",
+            "description" : "Vibe code project with Claude Sonnet",
+            "techstack" : ["NextJS", "Claude" ],
+            "img" : "/images/projectimg/180.png",
+            "src" : "https://180-iq-web.vercel.app/"
          },
         {
             "name" : "Ebay Clone",

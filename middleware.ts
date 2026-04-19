@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 const locales = ["en", "th"]
-const defaultLocale = 'en'
+const defaultLocale = locales[0]
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl 
@@ -11,7 +11,6 @@ export function middleware(request: NextRequest) {
   const pathHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
-
   if (pathHasLocale) return
 
 
