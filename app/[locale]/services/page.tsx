@@ -22,24 +22,31 @@ export default async function ServicesPage({
             <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>
           </div>
 
-        <Link href={`/${locale}/contact`}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {dataText.services.map((service: {
-              title: string;
-              description: string;
-              price?: string;
-              features?: string[];
-            }) => (
-              <ServiceCard
-                key={service.title}
-                title={service.title}
-                description={service.description}
-                price={service.price}
-                features={service.features}
-              />
-            ))}
-          </div>
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {dataText.services.map((service: {
+            title: string;
+            description: string;
+            price?: string;
+            features?: string[];
+            slug?: string;
+          }) => {
+            const slug = (service as any).slug ?? service.title
+              .toLowerCase()
+              .replace(/\s+/g, "-")
+              .replace(/[^\w-]+/g, "");
+
+            return (
+              <Link key={slug} href={`/${locale}/services/${slug}`}>
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  price={service.price}
+                  features={service.features}
+                />
+              </Link>
+            );
+          })}
+        </div>
 
         </div>
       </section>

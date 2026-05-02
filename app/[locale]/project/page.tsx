@@ -15,7 +15,7 @@ export default async function project({ params }: { params: Promise<{ locale: st
     return (<>
          <Navbar locale={locale} />
 
-        <section className="flex flex-col  bg-blue-950/50 w-full h-500">
+        <section className="flex flex-col  bg-blue-950/50 w-full h-600">
             <div className="flex  items-center flex-col text-white text-3xl font-bold mt-30"> 
                 <h1>{dataText.myproject}</h1>
                 <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>

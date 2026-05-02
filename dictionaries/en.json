@@ -8,20 +8,10 @@
     "servicesTitle": "My Services",
     "services": [
         {
-            "title": "Mathematics Summary (High School)",
-            "description": "Comprehensive study guide covering all high school mathematics topics with detailed explanations and problem solutions.",
-            "price": "Starting at: 29 Baht",
-            "features": ["Complete high school mathematics coverage", "Detailed explanations", "Key formulas and summary"]
-        },
-        {
             "title": "Thailand University Admissions Planning",
+            "slug": "thailand-university-admissions-planning",
             "description": "Comprehensive consulting and planning service for university entrance examination preparation for Dek70, Dek71, and Dek72 students.",
             "features": ["Strengths and weaknesses analysis", "Customized preparation plan", "Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"]
-        },
-        {
-            "title": "Landing Page Development",
-            "description": "Design and develop stunning, high-performance landing pages for your business or project.",
-            "features": ["Modern and attractive design", "Fully responsive", "SEO optimized" ]
         }
     ],
     "servicesCtaDescription": "Contact me to discuss your service needs and plan our collaboration.",
@@ -101,12 +91,19 @@
 
         },
         {
-            "name" : "E-Learning & Digital Marketplace (In Development)",
-            "description" : "A web application featuring video-based online courses and a digital marketplace for selling summary study sheets.",
+            "name" : "Insight-Blog (In Development)",
+            "description" : "Just Blog Website",
             "techstack" : ["NextJS"],
             "img" : "",
             "src" : ""
 
+        },
+                {
+            "name" : "Chevfy Secondbrain",
+            "description" : "Building a Second Brain with Obsidian: Integrating Research Skills and NotebookLM into an INTP-Optimized Knowledge System.",
+            "techstack" : ["Obsidian" , "Claude"],
+            "img" : "/images/projectimg/secondbrain.png",
+            "src" : ""
         },
         {
             "name" : "Where We go",

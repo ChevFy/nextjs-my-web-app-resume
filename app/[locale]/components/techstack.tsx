@@ -43,6 +43,8 @@ export default function TechStack()
     { id: "linux", name: "Linux", img: "https://skillicons.dev/icons?i=linux" },
     { id: "macos", name: "macOS", img: "https://go-skill-icons.vercel.app/api/icons?i=macos" },
     { id: "cursor", name: "Cursor", img: "https://go-skill-icons.vercel.app/api/icons?i=cursor" },
+    { id: "claude", name: "Claude", img: "https://go-skill-icons.vercel.app/api/icons?i=claude" },
+
     ];
 
     return (<>

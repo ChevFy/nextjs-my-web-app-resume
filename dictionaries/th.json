@@ -8,20 +8,10 @@
     "servicesTitle": "บริการของฉัน",
     "services": [
         {
-            "title": "สรุปคณิตศาสตร์ ม.ปลาย",
-            "description": "คู่มือสรุปคณิตศาสตร์ที่ครอบคลุมเนื้อหาทั้งหมดของแต่ละบทสำหรับนักเรียนมัธยมศึกษาตอนปลาย",
-            "price": "เริ่มต้น: 29 บาท",
-            "features": ["ครอบคลุมเนื้อหาคณิตศาสตร์ ม.ปลาย แต่ละบททั้งหมด", "อธิบายแบบละเอียด", "มีสูตรสำคัญและสรุปหลักของแต่ละบท"]
-        },
-        {
             "title": "วางแผนสอบเข้ามหาวิทยาลัย",
+            "slug": "thailand-university-admissions-planning",
             "description": "บริการปรึกษาและวางแผนการเตรียมตัวสอบเข้ามหาวิทยาลัยสำหรับทั้ง Dek70 Dek71 และ Dek72",
             "features": ["วิเคราะห์จุดแข็ง-จุดอ่อน", "วางแผนการเตรียมตัวให้กับทุกคณะ", "โดย Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"]
-        },
-        {
-            "title": "ทำเว็บ Landing Page",
-            "description": "ออกแบบและพัฒนาเว็บ Landing Page ที่สวยงาม ประสิทธิภาพดี สำหรับธุรกิจหรือโครงการของคุณ",
-            "features": ["การออกแบบที่ทันสมัย", "Responsive", "เพิ่มประสิทธิภาพการค้นหา (SEO)"]
         }
     ],
     "servicesCtaDescription": "ติดต่อฉันเพื่อพูดคุยเกี่ยวกับบริการของคุณ หรือการวางแผนการทำงานร่วมกัน",
@@ -104,12 +94,19 @@
 
         },
         {
-            "name" : "E-Learning & Digital Marketplace (In Development)",
-            "description" : "เว็บไซต์คอร์สวิดิโอสอนออนไลน์ และ ระบบขายชีทสรุป",
+            "name" : "Insight-Blog (In Development)",
+            "description" : "แค่เว็บบล็อกธรรมดา",
             "techstack" : ["NextJS"],
             "img" : "",
             "src" : ""
 
+        },
+        {
+            "name" : "Chevfy Secondbrain",
+            "description" : "สมองที่สองโดยใช้ obsidian แล้วมี skills Research ,  NotebookLM , จดเป็นสมองให้เข้ากับ INTP",
+            "techstack" : ["Obsidian" , "Claude"],
+            "img" : "/images/projectimg/secondbrain.png",
+            "src" : ""
         },
         {
             "name" : "Where We Go",
