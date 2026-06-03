@@ -91,12 +91,11 @@
 
         },
         {
-            "name" : "Insight-Blog (In Development)",
+            "name" : "Insight-Blog",
             "description" : "Just Blog Website",
             "techstack" : ["NextJS"],
             "img" : "",
-            "src" : ""
-
+            "src" : "https://github.com/ChevFy/insight-blog"
         },
                 {
             "name" : "Chevfy Secondbrain",
@@ -104,6 +103,13 @@
             "techstack" : ["Obsidian" , "Claude"],
             "img" : "/images/projectimg/secondbrain.png",
             "src" : ""
+        },
+        {
+            "name" : "MCP Youtube Researcher",
+            "description" : "Utilized MCP to build a personalized Second Brain, boosting research efficiency and knowledge retention.",
+            "techstack" : ["Python" , "fastMCP"],
+            "img" : "",
+            "src" : "https://github.com/ChevFy/mcp-yt-researcher"
         },
         {
             "name" : "Where We go",
