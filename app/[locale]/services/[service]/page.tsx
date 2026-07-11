@@ -61,6 +61,12 @@ export default async function Page({
                                 </div>
                             )}
 
+                            {svc.price && (
+                                <div className="mt-6 rounded-lg border border-[#06C755]/40 bg-[#06C755]/10 p-4">
+                                    <p className="text-[#06C755] font-semibold">{svc.price}</p>
+                                </div>
+                            )}
+
                             <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-4">
                                 <Link href="https://line.me/ti/p/ug_Pi9pHKx" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#06C755] text-white px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:bg-[#05b34c]">
                                     {dataText.servicesCtaButton || 'Contact'}
