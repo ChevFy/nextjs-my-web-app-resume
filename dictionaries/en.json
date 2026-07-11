@@ -10,12 +10,17 @@
         {
             "title": "Thailand University Admissions Planning",
             "slug": "thailand-university-admissions-planning",
-            "description": "Comprehensive consulting and planning service for university entrance examination preparation for Dek70, Dek71, and Dek72 students.",
-            "features": ["Strengths and weaknesses analysis", "Customized preparation plan", "Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"]
+            "description": "Lost on where to start? Tight budget for tutoring? This service turns confusion into a clear roadmap for Dek70, Dek71, and Dek72 students — a smart plan to get into your dream faculty without pouring money into expensive prep courses.",
+            "features": [
+                "No idea where to begin? We map your strengths & weaknesses first, then set the right goal",
+                "Low budget, still admitted — a lean self-study plan, no pricey courses required",
+                "A personalized plan for any faculty and any goal, not a one-size-fits-all template",
+                "Guided by a real Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"
+            ]
         }
     ],
     "servicesCtaDescription": "Contact me to discuss your service needs and plan our collaboration.",
-    "servicesCtaButton": "Contact Now",
+    "servicesCtaButton": "Chat on LINE",
     "contactTitle": "Contact Me",
     "contactCardTitle": "Get In Touch",
     "contactCardDescription": "I am open to internship opportunities , Freelance , backend or frontend Development, AI-focused projects, and education-related collaborations.",
@@ -80,58 +85,79 @@
         }
     ],
     "present": "Present",
-    "myproject" : "My Project", 
-    "projects" : [
-               {
-            "name" : "Pai Fire Prediction (In Development)",
-            "description" : "A predictive model for assessing forest fire risk areas using the XGBoost algorithm.",
-            "techstack" : ["Python" , "Pandas" , "Numpy" , "Scikit-learn"],
-            "img" : "/images/projectimg/pai.png",
-            "src" : ""
-
+    "myproject": "My Project",
+    "projects": [
+        {
+            "name": "Pai Fire Prediction (In Development)",
+            "description": "A predictive model for assessing forest fire risk areas using the XGBoost algorithm.",
+            "techstack": [
+                "Python",
+                "Pandas",
+                "Numpy",
+                "Scikit-learn"
+            ],
+            "img": "/images/projectimg/pai.png",
+            "src": ""
         },
         {
-            "name" : "Insight-Blog",
-            "description" : "Just Blog Website",
-            "techstack" : ["NextJS"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/insight-blog"
-        },
-                {
-            "name" : "Chevfy Secondbrain",
-            "description" : "Building a Second Brain with Obsidian: Integrating Research Skills and NotebookLM into an INTP-Optimized Knowledge System.",
-            "techstack" : ["Obsidian" , "Claude"],
-            "img" : "/images/projectimg/secondbrain.png",
-            "src" : ""
+            "name": "Insight-Blog",
+            "description": "Just Blog Website",
+            "techstack": [
+                "NextJS"
+            ],
+            "img": "",
+            "src": "https://github.com/ChevFy/insight-blog"
         },
         {
-            "name" : "MCP Youtube Researcher",
-            "description" : "Utilized MCP to build a personalized Second Brain, boosting research efficiency and knowledge retention.",
-            "techstack" : ["Python" , "fastMCP"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/mcp-yt-researcher"
+            "name": "Chevfy Secondbrain",
+            "description": "Building a Second Brain with Obsidian: Integrating Research Skills and NotebookLM into an INTP-Optimized Knowledge System.",
+            "techstack": [
+                "Obsidian",
+                "Claude"
+            ],
+            "img": "/images/projectimg/secondbrain.png",
+            "src": ""
         },
         {
-            "name" : "Where We go",
-            "description" : "Where We Go is a travel-focused web application we developed to solve the classic dilemmas: 'Where should we go tonight?' or 'What should we do for our next trip?' The platform focuses on helping users discover and manage travel destinations or check-in spots with ease. Developed as part of a Web Application Development course, we used the MVC .NET framework to simulate a real-world development process, building everything from the front-end interface to the back-end infrastructure.",
-            "techstack" :  ["MVC .NET" , "postgreSQL"] ,
-            "img" : "/images/projectimg/wherewego.png",
-            "src" : "https://github.com/ChevFy/where-we-go"
+            "name": "MCP Youtube Researcher",
+            "description": "Utilized MCP to build a personalized Second Brain, boosting research efficiency and knowledge retention.",
+            "techstack": [
+                "Python",
+                "fastMCP"
+            ],
+            "img": "",
+            "src": "https://github.com/ChevFy/mcp-yt-researcher"
         },
-         {
-            "name" : "180IQ Web",
-            "description" : "Vibe code project with Claude Sonnet",
-            "techstack" : ["NextJS", "Claude" ],
-            "img" : "/images/projectimg/180.png",
-            "src" : "https://180-iq-web.vercel.app/"
-         },
         {
-            "name" : "Ebay Clone",
-            "description" : "This project is a simplified clone of the eBay website, developed by KMITL students as part of an Object-Oriented Programming (OOP) course assignment.",
-            "techstack" : ["Python" , "FastHTML" ],
-            "img" : "/images/projectimg/ebay.png",
-            "src" : "https://github.com/ChevFy/EBAY_CLONE"
-         }
+            "name": "Where We go",
+            "description": "Where We Go is a travel-focused web application we developed to solve the classic dilemmas: 'Where should we go tonight?' or 'What should we do for our next trip?' The platform focuses on helping users discover and manage travel destinations or check-in spots with ease. Developed as part of a Web Application Development course, we used the MVC .NET framework to simulate a real-world development process, building everything from the front-end interface to the back-end infrastructure.",
+            "techstack": [
+                "MVC .NET",
+                "postgreSQL"
+            ],
+            "img": "/images/projectimg/wherewego.png",
+            "src": "https://github.com/ChevFy/where-we-go"
+        },
+        {
+            "name": "180IQ Web",
+            "description": "Vibe code project with Claude Sonnet",
+            "techstack": [
+                "NextJS",
+                "Claude"
+            ],
+            "img": "/images/projectimg/180.png",
+            "src": "https://180-iq-web.vercel.app/"
+        },
+        {
+            "name": "Ebay Clone",
+            "description": "This project is a simplified clone of the eBay website, developed by KMITL students as part of an Object-Oriented Programming (OOP) course assignment.",
+            "techstack": [
+                "Python",
+                "FastHTML"
+            ],
+            "img": "/images/projectimg/ebay.png",
+            "src": "https://github.com/ChevFy/EBAY_CLONE"
+        }
     ],
-    "footer" : "This website was built with Next.js in 2026."
+    "footer": "This website was built with Next.js in 2026."
 }

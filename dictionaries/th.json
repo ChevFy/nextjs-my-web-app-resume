@@ -10,12 +10,17 @@
         {
             "title": "วางแผนสอบเข้ามหาวิทยาลัย",
             "slug": "thailand-university-admissions-planning",
-            "description": "บริการปรึกษาและวางแผนการเตรียมตัวสอบเข้ามหาวิทยาลัยสำหรับทั้ง Dek70 Dek71 และ Dek72",
-            "features": ["วิเคราะห์จุดแข็ง-จุดอ่อน", "วางแผนการเตรียมตัวให้กับทุกคณะ", "โดย Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"]
+            "description": "ไม่รู้จะเริ่มสอบเข้ายังไง? งบเรียนพิเศษมีจำกัด? บริการนี้ช่วยเปลี่ยนความสับสนให้เป็นแผนที่ชัดเจน สำหรับ Dek70 Dek71 และ Dek72 วางแผนสอบติดคณะในฝันแบบคุ้มค่า ไม่ต้องทุ่มเงินก้อนโตไปกับคอร์สแพง ๆ",
+            "features": [
+                "หลงทางไม่รู้เริ่มตรงไหน? เราหาจุดแข็ง-จุดอ่อนให้ก่อน แล้ววางเป้าที่ใช่",
+                "งบน้อยก็สอบติดได้ วางแผนติวเองแบบประหยัด ไม่ต้องพึ่งคอร์สแพง",
+                "แผนเฉพาะตัวสำหรับทุกคณะ ทุกเป้าหมาย ไม่ใช่แผนสำเร็จรูป",
+                "แนะนำโดยตัวจริง Top 1% (99th Percentile) - A-Level Mathematics 1 & Physics"
+            ]
         }
     ],
     "servicesCtaDescription": "ติดต่อฉันเพื่อพูดคุยเกี่ยวกับบริการของคุณ หรือการวางแผนการทำงานร่วมกัน",
-    "servicesCtaButton": "ติดต่อ",
+    "servicesCtaButton": "ติดต่อทาง LINE",
     "contactTitle": "ติดต่อ",
     "contactCardTitle": "ช่องทางการติดต่อ",
     "contactCardDescription": "ผมเปิดรับโอกาสฝึกงานงานสาย Backend หรือ Frontend โปรเจกต์ที่เกี่ยวกับ AI และความร่วมมือด้านการศึกษา",
@@ -83,61 +88,79 @@
         }
     ],
     "present": "ปัจจุบัน",
-    "myproject" : "โปรเจคของฉัน",
-    "projects" : [
+    "myproject": "โปรเจคของฉัน",
+    "projects": [
         {
-            "name" : "Pai Fire Prediction (In Development)",
-            "description" : "Model ทำนายพื้นที่ความเสี่ยงโอกาสการเกิดไฟป่า โดยใช้อัลกอริทึม XGboost ",
-            "techstack" : ["Python" , "Pandas" , "Numpy" , "Scikit-learn"],
-            "img" : "/images/projectimg/pai.png",
-            "src" : ""
-
+            "name": "Pai Fire Prediction (In Development)",
+            "description": "Model ทำนายพื้นที่ความเสี่ยงโอกาสการเกิดไฟป่า โดยใช้อัลกอริทึม XGboost ",
+            "techstack": [
+                "Python",
+                "Pandas",
+                "Numpy",
+                "Scikit-learn"
+            ],
+            "img": "/images/projectimg/pai.png",
+            "src": ""
         },
         {
-            "name" : "Insight-Blog",
-            "description" : "แค่เว็บบล็อกธรรมดา",
-            "techstack" : ["NextJS"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/insight-blog"
-
+            "name": "Insight-Blog",
+            "description": "แค่เว็บบล็อกธรรมดา",
+            "techstack": [
+                "NextJS"
+            ],
+            "img": "",
+            "src": "https://github.com/ChevFy/insight-blog"
         },
         {
-            "name" : "Chevfy Secondbrain",
-            "description" : "สมองที่สองโดยใช้ obsidian แล้วมี skills Research ,  NotebookLM , จดเป็นสมองให้เข้ากับ INTP",
-            "techstack" : ["Obsidian" , "Claude"],
-            "img" : "/images/projectimg/secondbrain.png",
-            "src" : ""
+            "name": "Chevfy Secondbrain",
+            "description": "สมองที่สองโดยใช้ obsidian แล้วมี skills Research ,  NotebookLM , จดเป็นสมองให้เข้ากับ INTP",
+            "techstack": [
+                "Obsidian",
+                "Claude"
+            ],
+            "img": "/images/projectimg/secondbrain.png",
+            "src": ""
         },
-        {           
-             "name" : "MCP Youtube Researcher",
-            "description" : "Utilized MCP to build a personalized Second Brain, boosting research efficiency and knowledge retention.",
-            "techstack" : ["Python" , "fastMCP"],
-            "img" : "",
-            "src" : "https://github.com/ChevFy/mcp-yt-researcher"
-    },
         {
-            "name" : "Where We Go",
-            "description" : "Where We Go เป็นเว็บแอปพลิเคชันท่องเที่ยวที่พัฒนาขึ้นมาเพื่อแก้ปัญหา \"เย็นนี้ไปไหนดี?\" หรือ \"ทริปหน้าจะไปทำอะไรดี?\" โดยมุ่งเน้นให้ผู้ใช้งานสามารถค้นหาและจัดการสถานที่ท่องเที่ยวหรือจุดเช็กอินได้ง่ายขึ้น พัฒนาในรายวิชา Web Application Development ด้วยสถาปัตยกรรม MVC .NET เพื่อจำลองการสร้างระบบเว็บจริงทั้งฝั่ง Frontend และ Backend",
-            "techstack" : ["MVC .NET" , "postgreSQL"],
-            "img" : "/images/projectimg/wherewego.png",
-            "src" : "https://github.com/ChevFy/where-we-go"
-
+            "name": "MCP Youtube Researcher",
+            "description": "Utilized MCP to build a personalized Second Brain, boosting research efficiency and knowledge retention.",
+            "techstack": [
+                "Python",
+                "fastMCP"
+            ],
+            "img": "",
+            "src": "https://github.com/ChevFy/mcp-yt-researcher"
         },
-         {
-            "name" : "180IQ Web",
-            "description" : "Vibe code project ด้วย Claude Sonnet",
-            "techstack" : ["NextJS" , "Claude"],
-            "img" : "/images/projectimg/180.png",
-            "src" : "https://180-iq-web.vercel.app/"
-         },
         {
-            "name" : "Ebay Clone",
-            "description" : "โปรเจกต์นี้เป็นแบบจำลองที่เรียบง่ายของเว็บไซต์ eBay ซึ่งพัฒนาโดยนักศึกษาของ KMITL เป็นส่วนหนึ่งของงานที่ได้รับมอบหมายในรายวิชาการเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming หรือ OOP)",
-            "techstack" : ["Python" , "FastHTML" ],
-            "img" : "/images/projectimg/ebay.png",
-            "src" : "https://github.com/ChevFy/EBAY_CLONE"
-         }
+            "name": "Where We Go",
+            "description": "Where We Go เป็นเว็บแอปพลิเคชันท่องเที่ยวที่พัฒนาขึ้นมาเพื่อแก้ปัญหา \"เย็นนี้ไปไหนดี?\" หรือ \"ทริปหน้าจะไปทำอะไรดี?\" โดยมุ่งเน้นให้ผู้ใช้งานสามารถค้นหาและจัดการสถานที่ท่องเที่ยวหรือจุดเช็กอินได้ง่ายขึ้น พัฒนาในรายวิชา Web Application Development ด้วยสถาปัตยกรรม MVC .NET เพื่อจำลองการสร้างระบบเว็บจริงทั้งฝั่ง Frontend และ Backend",
+            "techstack": [
+                "MVC .NET",
+                "postgreSQL"
+            ],
+            "img": "/images/projectimg/wherewego.png",
+            "src": "https://github.com/ChevFy/where-we-go"
+        },
+        {
+            "name": "180IQ Web",
+            "description": "Vibe code project ด้วย Claude Sonnet",
+            "techstack": [
+                "NextJS",
+                "Claude"
+            ],
+            "img": "/images/projectimg/180.png",
+            "src": "https://180-iq-web.vercel.app/"
+        },
+        {
+            "name": "Ebay Clone",
+            "description": "โปรเจกต์นี้เป็นแบบจำลองที่เรียบง่ายของเว็บไซต์ eBay ซึ่งพัฒนาโดยนักศึกษาของ KMITL เป็นส่วนหนึ่งของงานที่ได้รับมอบหมายในรายวิชาการเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming หรือ OOP)",
+            "techstack": [
+                "Python",
+                "FastHTML"
+            ],
+            "img": "/images/projectimg/ebay.png",
+            "src": "https://github.com/ChevFy/EBAY_CLONE"
+        }
     ],
-    "footer" : "เว็บนี้ทำด้วย Next.js ในปี 2026"
-
+    "footer": "เว็บนี้ทำด้วย Next.js ในปี 2026"
 }
