@@ -21,11 +21,18 @@
                 "A full PDF roadmap, compiled from what we discuss in the session and sent to you afterward",
                 "A personalized study schedule with initial portfolio guidance and how to handle common situations"
             ],
-            "price": "500 THB per 30–60 minute consultation, including the PDF roadmap compiled and delivered after the session. Pay only for what you genuinely need — far better value than investing tens of thousands in a course that may not suit you."
+            "price": "500 THB per 30–60 minute consultation, including the PDF roadmap compiled and delivered after the session. Pay only for what you genuinely need — far better value than investing tens of thousands in a course that may not suit you.",
+            "testimonials": [
+                {
+                    "name": "Peem (Dek70)",
+                    "quote": "Talking with him let me see myself again through the eyes of someone with real experience. He helped me analyze my situation honestly and gave me genuinely great perspective — I walked away feeling motivated to keep pushing forward. Thank you."
+                }
+            ]
         }
     ],
     "servicesInSessionLabel": "In the session",
     "servicesDeliverablesLabel": "What you receive afterward",
+    "servicesTestimonialsLabel": "What students say",
     "servicesCtaDescription": "Contact me to discuss your service needs and plan our collaboration.",
     "servicesCtaButton": "Chat on LINE",
     "contactTitle": "Contact Me",

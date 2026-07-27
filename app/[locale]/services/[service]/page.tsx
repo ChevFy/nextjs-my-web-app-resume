@@ -1,6 +1,7 @@
 
 
 import Navbar from "../../components/navbar";
+import Testimonials from "../../components/testimonials";
 import Link from "next/link";
 import { getDictionary } from "../../layout";
 
@@ -79,6 +80,13 @@ export default async function Page({
                                 <div className="mt-6 rounded-lg border border-[#06C755]/40 bg-[#06C755]/10 p-4">
                                     <p className="text-[#06C755] font-semibold">{svc.price}</p>
                                 </div>
+                            )}
+
+                            {svc.testimonials && svc.testimonials.length > 0 && (
+                                <Testimonials
+                                    testimonials={svc.testimonials}
+                                    label={dataText.servicesTestimonialsLabel}
+                                />
                             )}
 
                             <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-4">
