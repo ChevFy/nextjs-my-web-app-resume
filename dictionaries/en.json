@@ -13,15 +13,19 @@
             "description": "Not sure where to begin, or working with a limited tutoring budget? This service is designed to turn uncertainty into a clear, actionable roadmap — helping Dek70, Dek71, and Dek72 students plan their path into their dream faculty with direction, without overspending on unnecessarily expensive prep courses.",
             "features": [
                 "A systematic assessment of your strengths and weaknesses before setting a goal that truly fits you",
-                "A cost-effective self-study plan that gets you admitted even on a limited budget — no pricey courses required",
-                "A personalized preparation plan tailored to your faculty and goals, never a one-size-fits-all template",
-                "A structured study schedule, plus initial guidance on preparing your portfolio",
-                "Guided by a Top 1% (99th Percentile) scorer in A-Level Mathematics 1 and Physics",
-                "Receive a PDF roadmap summarizing your preparation plan and initial strategies for common situations after the session"
+                "We map out your study approach and initial portfolio direction together, tailored to your faculty and goals",
+                "Guidance on a cost-effective self-study plan that gets you admitted even on a limited budget — no pricey courses required",
+                "Guided by someone who has actually sat the exams and scored in the Top 1% (99th Percentile) in A-Level Mathematics 1 and Physics — so you get both the content and the preparation strategy from real experience"
             ],
-            "price": "500 THB per 30–60 minute consultation. Pay only for what you genuinely need — far better value than investing tens of thousands in a course that may not suit you."
+            "deliverables": [
+                "A full PDF roadmap, compiled from what we discuss in the session and sent to you afterward",
+                "A personalized study schedule with initial portfolio guidance and how to handle common situations"
+            ],
+            "price": "500 THB per 30–60 minute consultation, including the PDF roadmap compiled and delivered after the session. Pay only for what you genuinely need — far better value than investing tens of thousands in a course that may not suit you."
         }
     ],
+    "servicesInSessionLabel": "In the session",
+    "servicesDeliverablesLabel": "What you receive afterward",
     "servicesCtaDescription": "Contact me to discuss your service needs and plan our collaboration.",
     "servicesCtaButton": "Chat on LINE",
     "contactTitle": "Contact Me",

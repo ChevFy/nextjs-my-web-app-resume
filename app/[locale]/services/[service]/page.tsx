@@ -49,12 +49,26 @@ export default async function Page({
 
                             {svc.features && (
                                 <div className="mt-4">
-                                    <h3 className="text-lg font-semibold mb-3 text-blue-100">Features</h3>
+                                    <h3 className="text-lg font-semibold mb-3 text-blue-100">{dataText.servicesInSessionLabel || "Features"}</h3>
                                     <div className="flex flex-col gap-3">
                                         {svc.features.map((f: string) => (
                                             <div key={f} className="inline-flex items-start gap-3">
                                                 <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-white/10 text-white text-xs">✓</span>
                                                 <span className="text-blue-100">{f}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {svc.deliverables && (
+                                <div className="mt-6">
+                                    <h3 className="text-lg font-semibold mb-3 text-blue-100">{dataText.servicesDeliverablesLabel || "Deliverables"}</h3>
+                                    <div className="flex flex-col gap-3">
+                                        {svc.deliverables.map((d: string) => (
+                                            <div key={d} className="inline-flex items-start gap-3">
+                                                <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#06C755]/20 text-[#06C755] text-xs">↓</span>
+                                                <span className="text-blue-100">{d}</span>
                                             </div>
                                         ))}
                                     </div>

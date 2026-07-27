@@ -28,9 +28,10 @@ export default async function ServicesPage({
             description: string;
             price?: string;
             features?: string[];
+            deliverables?: string[];
             slug?: string;
           }) => {
-            const slug = (service as any).slug ?? service.title
+            const slug = service.slug ?? service.title
               .toLowerCase()
               .replace(/\s+/g, "-")
               .replace(/[^\w-]+/g, "");
@@ -42,6 +43,9 @@ export default async function ServicesPage({
                   description={service.description}
                   price={service.price}
                   features={service.features}
+                  deliverables={service.deliverables}
+                  inSessionLabel={dataText.servicesInSessionLabel}
+                  deliverablesLabel={dataText.servicesDeliverablesLabel}
                 />
               </Link>
             );
