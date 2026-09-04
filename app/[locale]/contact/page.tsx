@@ -60,7 +60,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
               <div className="mt-8 flex flex-col gap-3">
                 <Link
-                  href="https://line.me/ti/p/2PNWu4xp8s"
+                  href="https://line.me/R/ti/p/@849nxeuv"
                   className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
                 > {dataText.contactActionLine}
                 </Link>
