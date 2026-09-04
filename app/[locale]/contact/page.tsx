@@ -12,10 +12,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
       <section className="bg-blue-950/50 min-h-screen px-6 sm:px-8 lg:px-20 pt-28 pb-16">
         <div className="max-w-6xl mx-auto">
-           <div className="flex  items-center flex-col text-white text-3xl font-bold mb-10"> 
-                <h1>{dataText.contactTitle}</h1>
-                <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>
-            </div>
+          <div className="flex  items-center flex-col text-white text-3xl font-bold mb-10">
+            <h1>{dataText.contactTitle}</h1>
+            <div className="h-1 w-80 bg-blue-600 mx-auto mt-5 rounded-full"></div>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div className="lg:col-span-7 rounded-2xl border border-white/10 p-6 sm:p-8 shadow-2xl">
@@ -25,7 +25,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <div className="mt-8 space-y-4">
                 <div className="rounded-xl bg-white/5 border border-white/10 p-4">
                   <p className="text-blue-300 text-sm font-semibold">{dataText.contactEmailLabel}</p>
-                    <p className="text-white text-lg font-medium">
+                  <p className="text-white text-lg font-medium">
                     koonchevychpai123@gmail.com
                   </p>
                 </div>
@@ -39,7 +39,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
                 <div className="rounded-xl bg-white/5 border border-white/10 p-4">
                   <p className="text-blue-300 text-sm font-semibold">LINE</p>
-                    <p className="text-white text-lg font-medium">
+                  <p className="text-white text-lg font-medium">
                     0942261664
                   </p>
                 </div>
@@ -59,8 +59,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               </div>
 
               <div className="mt-8 flex flex-col gap-3">
-                  <Link
-                  href="https://line.me/ti/p/ug_Pi9pHKx"
+                <Link
+                  href="https://line.me/ti/p/2PNWu4xp8s"
                   className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
                 > {dataText.contactActionLine}
                 </Link>
