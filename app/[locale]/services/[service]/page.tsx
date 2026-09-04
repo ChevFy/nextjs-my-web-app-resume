@@ -90,7 +90,7 @@ export default async function Page({
                             )}
 
                             <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-4">
-                                <Link href="https://line.me/ti/p/ug_Pi9pHKx" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#06C755] text-white px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:bg-[#05b34c]">
+                                <Link href="https://line.me/R/ti/p/@849nxeuv" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#06C755] text-white px-4 py-2 rounded-md text-sm font-medium shadow-sm hover:bg-[#05b34c]">
                                     {dataText.servicesCtaButton || 'Contact'}
                                 </Link>
                             </div>
