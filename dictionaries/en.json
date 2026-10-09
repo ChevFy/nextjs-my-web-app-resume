@@ -102,16 +102,14 @@
     "myproject": "My Project",
     "projects": [
         {
-            "name": "Pai Fire Prediction (In Development)",
-            "description": "A predictive model for assessing forest fire risk areas using the XGBoost algorithm.",
+            "name": "Pai Fahsai Reporter",
+            "description": "A LINE Official Account bot for reporting forest fire incidents in Pai, dispatching alerts with location and coordinates to volunteers who can accept, track, and close each case.",
             "techstack": [
                 "Python",
-                "Pandas",
-                "Numpy",
-                "Scikit-learn"
+                "LINE API"
             ],
-            "img": "/images/projectimg/pai.png",
-            "src": ""
+            "img": "/images/projectimg/pai_fire_reporter.png",
+            "src": "https://github.com/ChevFy/line-paifahsai-reporter"
         },
         {
             "name": "Insight-Blog",

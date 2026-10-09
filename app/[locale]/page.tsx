@@ -41,7 +41,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
           <div>
             <Link
-              href="https://smallpdf.com/file#s=be201c89-9c27-4129-9e0b-197a6ecbfb19"
+              href="https://canva.link/lfg6gj8nn6vsrwg"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-xl bg-blue-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"

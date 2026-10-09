@@ -105,16 +105,14 @@
     "myproject": "โปรเจคของฉัน",
     "projects": [
         {
-            "name": "Pai Fire Prediction (In Development)",
-            "description": "Model ทำนายพื้นที่ความเสี่ยงโอกาสการเกิดไฟป่า โดยใช้อัลกอริทึม XGboost ",
+            "name": "Pai Fahsai Reporter",
+            "description": "LINE Official Account บอทแจ้งเหตุไฟป่าในอำเภอปาย ส่งแจ้งเหตุพร้อมตำแหน่งและพิกัดให้จิตอาสา รับงาน ติดตาม และปิดเหตุได้ในตัว",
             "techstack": [
                 "Python",
-                "Pandas",
-                "Numpy",
-                "Scikit-learn"
+                "LINE API"
             ],
-            "img": "/images/projectimg/pai.png",
-            "src": ""
+            "img": "/images/projectimg/pai_fire_reporter.png",
+            "src": "https://github.com/ChevFy/line-paifahsai-reporter"
         },
         {
             "name": "Insight-Blog",

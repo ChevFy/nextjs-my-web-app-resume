@@ -71,7 +71,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   {dataText.contactActionMail}
                 </Link>
                 <Link
-                  href="https://smallpdf.com/file#s=be201c89-9c27-4129-9e0b-197a6ecbfb19"
+                  href="https://canva.link/lfg6gj8nn6vsrwg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl border border-blue-400/40 bg-blue-500/10 px-4 py-3 text-base font-semibold text-blue-200 transition-all hover:bg-blue-500/20"
