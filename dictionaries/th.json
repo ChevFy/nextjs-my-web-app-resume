@@ -174,5 +174,46 @@
             "src": "https://github.com/ChevFy/EBAY_CLONE"
         }
     ],
+    "projectTabSide": "Side Project",
+    "projectTab42": "42 School Project",
+    "projectViewGithub": "ดูบน GitHub",
+    "school42Projects": [
+        {
+            "name": "Libft",
+            "description": "เขียนฟังก์ชันพื้นฐานของ C standard library ขึ้นมาใหม่เอง (จัดการ string, memory และ linked list) รวมเป็น static library ไว้ใช้ต่อในโปรเจค 42 อื่นๆ",
+            "techstack": ["C", "Makefile"],
+            "src": "https://github.com/ChevFy/Libft_42_chevy"
+        },
+        {
+            "name": "ft_printf",
+            "description": "เขียนฟังก์ชัน printf ขึ้นมาเอง รองรับ format specifier (c, s, p, d, i, u, x, X, %) ด้วย variadic arguments",
+            "techstack": ["C", "Variadic Functions"],
+            "src": "https://github.com/ChevFy/printf_42_chevy"
+        },
+        {
+            "name": "push_swap",
+            "description": "เรียงลำดับตัวเลขใน stack โดยใช้ 2 stack และชุดคำสั่งที่จำกัด เป้าหมายคือใช้จำนวนคำสั่งให้น้อยที่สุด",
+            "techstack": ["C", "Algorithms"],
+            "src": "https://github.com/ChevFy/push-swap_42_chevfy"
+        },
+        {
+            "name": "minitalk",
+            "description": "โปรแกรม client-server ส่งข้อความระหว่าง process โดยใช้แค่ UNIX signal (SIGUSR1 / SIGUSR2)",
+            "techstack": ["C", "UNIX Signals"],
+            "src": "https://github.com/ChevFy/minitalk_42_chevy"
+        },
+        {
+            "name": "Philosophers",
+            "description": "แก้ปัญหา Dining Philosophers ด้วย thread และ mutex พร้อมป้องกัน deadlock และ data race",
+            "techstack": ["C", "Threads", "Mutex"],
+            "src": "https://github.com/ChevFy/Philossopher_42_Chevfy"
+        },
+        {
+            "name": "Minishell",
+            "description": "โปรเจคทีม สร้าง shell ขนาดเล็กคล้าย bash รองรับการ parse คำสั่ง, pipe, redirection, environment variable และ built-in command",
+            "techstack": ["C", "Shell", "Process"],
+            "src": "https://github.com/Wai-Theetat/Minishell"
+        }
+    ],
     "footer": "เว็บนี้ทำด้วย Next.js ในปี 2026"
 }

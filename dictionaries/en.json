@@ -171,5 +171,46 @@
             "src": "https://github.com/ChevFy/EBAY_CLONE"
         }
     ],
+    "projectTabSide": "Side Project",
+    "projectTab42": "42 School Project",
+    "projectViewGithub": "View on GitHub",
+    "school42Projects": [
+        {
+            "name": "Libft",
+            "description": "Re-implementation of core C standard library functions (string, memory, and linked-list utilities) as a reusable static library for later 42 projects.",
+            "techstack": ["C", "Makefile"],
+            "src": "https://github.com/ChevFy/Libft_42_chevy"
+        },
+        {
+            "name": "ft_printf",
+            "description": "A custom printf that handles format specifiers (c, s, p, d, i, u, x, X, %) using variadic arguments.",
+            "techstack": ["C", "Variadic Functions"],
+            "src": "https://github.com/ChevFy/printf_42_chevy"
+        },
+        {
+            "name": "push_swap",
+            "description": "Sorts a stack of integers using two stacks and a limited set of operations, aiming for the fewest moves possible.",
+            "techstack": ["C", "Algorithms"],
+            "src": "https://github.com/ChevFy/push-swap_42_chevfy"
+        },
+        {
+            "name": "minitalk",
+            "description": "A client-server program that sends messages between processes using only UNIX signals (SIGUSR1 / SIGUSR2).",
+            "techstack": ["C", "UNIX Signals"],
+            "src": "https://github.com/ChevFy/minitalk_42_chevy"
+        },
+        {
+            "name": "Philosophers",
+            "description": "A solution to the Dining Philosophers problem, exploring threads, mutexes, and avoiding deadlocks and data races.",
+            "techstack": ["C", "Threads", "Mutex"],
+            "src": "https://github.com/ChevFy/Philossopher_42_Chevfy"
+        },
+        {
+            "name": "Minishell",
+            "description": "A team project building a small bash-like shell with parsing, pipes, redirections, environment variables, and built-in commands.",
+            "techstack": ["C", "Shell", "Process"],
+            "src": "https://github.com/Wai-Theetat/Minishell"
+        }
+    ],
     "footer": "This website was built with Next.js in 2026."
 }
