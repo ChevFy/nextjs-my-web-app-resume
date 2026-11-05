@@ -215,5 +215,16 @@
             "src": "https://github.com/Wai-Theetat/Minishell"
         }
     ],
-    "footer": "เว็บนี้ทำด้วย Next.js ในปี 2026"
+    "footer": "เว็บนี้ทำด้วย Next.js ในปี 2026",
+    "achievementsTitle": "ความสำเร็จ",
+    "achievements": [
+        {
+            "title": "Young Webmaster Camp #21 (YWC21)",
+            "status": "ผ่านการคัดเลือก",
+            "track": "สาขา Programming",
+            "description": "ได้รับการคัดเลือกเข้าร่วม Young Webmaster Camp ครั้งที่ 21 (YWC21) ค่ายพัฒนาเว็บที่มีการแข่งขันสูงระดับประเทศสำหรับนักศึกษาในประเทศไทย",
+            "organization": "สมาคมผู้ดูแลเว็บไทย",
+            "year": "2026"
+        }
+    ]
 }
