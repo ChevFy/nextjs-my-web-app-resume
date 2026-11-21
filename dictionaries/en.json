@@ -1,7 +1,7 @@
 {
     "firstName": "Nantapong",
     "lastName": "Pongtamrongsak",
-    "describtion": "Computer Engineering student with a passion for low-level systems and AI-driven frontend and backend development aimed at building sustainable innovations. Alongside my technical pursuits, I serve as a Mathematics and Physics tutor and university admissions consultant, dedicated to empowering students and promoting equal educational opportunities.",
+    "describtion": "Computer Engineering student with a passion for low-level systems and AI-driven frontend and backend development aimed at building sustainable innovations. Alongside my technical pursuits, I serve as a university admissions planning consultant, dedicated to empowering students and promoting equal educational opportunities.",
     "navbarProject": "Project",
     "navbarService": "Services",
     "navbarContact": "Contact",
@@ -71,8 +71,16 @@
     "experiences": [
         {
             "description": [
-                "Developed a FastAPI backend for news analysis, using embeddings to assess credibility and detect fake news.",
-                "Built a chatbot that analyzes user-submitted news and provides real-time fake news verification."
+                "Designed the tech stack and gathered requirements with the client for a LINE-based wildfire reporting system, delivering a proof of concept approved for production planning.",
+                "Developed a FastAPI backend with PostgreSQL/PostGIS that groups nearby reports into incidents and notifies volunteers via the LINE Messaging API."
+            ],
+            "year_started": "2026 May",
+            "year_ended": "Present",
+            "location": "Mae Hong Son, TH"
+        },
+        {
+            "description": [
+                "Studied the codebase of a Python FastAPI backend that uses embeddings and pgvector to compare news articles and assess credibility, and proposed improvement ideas to the team."
             ],
             "year_started": "2025 Oct",
             "year_ended": "2025 Nov",
@@ -80,32 +88,39 @@
         },
         {
             "description": [
-                "Collaborated in a startup developing AI-based health risk assessment technology and a telemedicine platform.",
-                "Acted as a company representative in meetings, delivering presentations on technology solutions.",
-                "Coordinated testing and validation, ensuring compliance with industry standards."
+                "Designed a telemedicine platform architecture using Next.js, Supabase, and LiveKit, and built an AI health risk assessment feature with the OpenAI API.",
+                "Planned the tech budget (~฿97K/month) for MVP and seed stages, including cost comparison of video call providers."
             ],
             "year_started": "2025 June",
             "year_ended": "2025 Oct",
             "location": "Bangkok, TH"
-        },
-        {
-            "description": [
-                "Tested web application functionality to ensure compliance with defined standards.",
-                "Reported system issues and defects to the development team for further improvement."
-            ],
-            "year_started": "2023 April",
-            "year_ended": "2023 June",
-            "location": "Mae Hong Son, TH"
         }
     ],
     "present": "Present",
     "myproject": "My Project",
     "projects": [
         {
+            "name": "ChevLab Homelab Dashboard",
+            "description": "A self-hosted homelab monitoring dashboard with a to-do planner that parses Thai/English tasks using a local SLM (Ollama), exposed securely through Cloudflare Tunnel.",
+            "techstack": [
+                "Next.js",
+                "FastAPI",
+                "PostgreSQL",
+                "Docker",
+                "Cloudflare Tunnel",
+                "Ollama"
+            ],
+            "img": "/images/projectimg/chevlab.png",
+            "src": "https://chevlab-app.chevfy.com"
+        },
+        {
             "name": "Pai Fahsai Reporter",
-            "description": "A LINE Official Account bot for reporting forest fire incidents in Pai, dispatching alerts with location and coordinates to volunteers who can accept, track, and close each case.",
+            "description": "A LINE Official Account bot for reporting forest fire incidents in Pai. A FastAPI + PostGIS backend groups nearby reports into incidents and notifies volunteers via the LINE Messaging API, who can accept, track, and close each case.",
             "techstack": [
                 "Python",
+                "FastAPI",
+                "PostgreSQL",
+                "PostGIS",
                 "LINE API"
             ],
             "img": "/images/projectimg/pai_fire_reporter.png",
@@ -178,42 +193,63 @@
         {
             "name": "Libft",
             "description": "Re-implementation of core C standard library functions (string, memory, and linked-list utilities) as a reusable static library for later 42 projects.",
-            "techstack": ["C", "Makefile"],
+            "techstack": [
+                "C",
+                "Makefile"
+            ],
             "src": "https://github.com/ChevFy/Libft_42_chevy"
         },
         {
             "name": "ft_printf",
             "description": "A custom printf that handles format specifiers (c, s, p, d, i, u, x, X, %) using variadic arguments.",
-            "techstack": ["C", "Variadic Functions"],
+            "techstack": [
+                "C",
+                "Variadic Functions"
+            ],
             "src": "https://github.com/ChevFy/printf_42_chevy"
         },
         {
             "name": "push_swap",
             "description": "Sorts a stack of integers using two stacks and a limited set of operations, aiming for the fewest moves possible.",
-            "techstack": ["C", "Algorithms"],
+            "techstack": [
+                "C",
+                "Algorithms"
+            ],
             "src": "https://github.com/ChevFy/push-swap_42_chevfy"
         },
         {
             "name": "minitalk",
             "description": "A client-server program that sends messages between processes using only UNIX signals (SIGUSR1 / SIGUSR2).",
-            "techstack": ["C", "UNIX Signals"],
+            "techstack": [
+                "C",
+                "UNIX Signals"
+            ],
             "src": "https://github.com/ChevFy/minitalk_42_chevy"
         },
         {
             "name": "Philosophers",
             "description": "A solution to the Dining Philosophers problem, exploring threads, mutexes, and avoiding deadlocks and data races.",
-            "techstack": ["C", "Threads", "Mutex"],
+            "techstack": [
+                "C",
+                "Threads",
+                "Mutex"
+            ],
             "src": "https://github.com/ChevFy/Philossopher_42_Chevfy"
         },
         {
             "name": "Minishell",
-            "description": "A team project building a small bash-like shell with parsing, pipes, redirections, environment variables, and built-in commands.",
-            "techstack": ["C", "Shell", "Process"],
+            "description": "Built a Bash-like shell in C with a partner; implemented the executor, handling process creation (fork/execve), pipes, redirections, and signals.",
+            "techstack": [
+                "C",
+                "Shell",
+                "Process",
+                "Signals"
+            ],
             "src": "https://github.com/Wai-Theetat/Minishell"
         }
     ],
     "footer": "This website was built with Next.js in 2026.",
-    "achievementsTitle": "Achievements",
+    "achievementsTitle": "Achievements & Activities",
     "achievements": [
         {
             "title": "Young Webmaster Camp #21 (YWC21)",
@@ -221,7 +257,21 @@
             "track": "Programming Track",
             "description": "Selected as a participant in Young Webmaster Camp #21 (YWC21), a nationally competitive web development camp for university students in Thailand.",
             "organization": "Thai Webmaster Association",
-            "year": "2026"
+            "year": "2026",
+            "img": "/images/ywc21.jpg"
+        },
+        {
+            "title": "Embedded Systems Laboratory (ESL), KMITL",
+            "status": "Cohort Lead & Academic Lead",
+            "track": "3rd-Year Cohort",
+            "description": [
+                "Serve as 3rd-Year Cohort Lead and Academic Lead, running training for new and current members.",
+                "Co-built the lab website (ce-esl.com) full-stack with a team of 7 using Next.js and NestJS."
+            ],
+            "organization": "KMITL",
+            "year": "Present",
+            "img": "/images/esl.png",
+            "link": "https://ce-esl.com"
         }
     ]
 }

@@ -6,7 +6,9 @@ interface AchievementItem {
   status: string;
   organization: string;
   year: string;
-  description: string;
+  description: string | string[];
+  img?: string;
+  link?: string;
 }
 
 interface AchievementsDictionary {
@@ -33,8 +35,8 @@ export default function Achievements({
           >
             <div className="flex-shrink-0 flex items-center justify-center p-4 mb-4 sm:mb-0 sm:mr-6">
               <Image
-                src="/images/ywc21.jpg"
-                alt=""
+                src={item.img ?? "/images/ywc21.jpg"}
+                alt={item.title}
                 width={80}
                 height={80}
                 className="object-contain drop-shadow-lg"
@@ -46,10 +48,27 @@ export default function Achievements({
                 <div className="space-y-1">
                   <p className="text-sm font-semibold uppercase tracking-widest text-blue-300">{item.status}</p>
                   <h3 className="text-xl md:text-2xl font-bold text-blue-400">
-                    {item.title}
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 hover:underline underline-offset-4">
+                        {item.title}
+                      </a>
+                    ) : (
+                      item.title
+                    )}
                   </h3>
                   <p className="text-slate-400">{item.track}</p>
-                  <p className="text-sm text-slate-400 pt-2">{item.description}</p>
+                  {Array.isArray(item.description) ? (
+                    <ul className="pt-2 space-y-2">
+                      {item.description.map((line) => (
+                        <li key={line} className="text-sm text-slate-400 flex items-start">
+                          <span className="mr-2 text-blue-500 text-xs mt-1">●</span>
+                          {line}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-slate-400 pt-2">{item.description}</p>
+                  )}
                   <p className="text-sm text-slate-500 pt-1">{item.organization}</p>
                 </div>
 

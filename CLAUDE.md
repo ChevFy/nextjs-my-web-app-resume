@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 Personal portfolio site. Next.js 16 App Router, React 19, TypeScript, Tailwind CSS 4, Framer Motion. Bilingual (en/th).
 
 ## Commands
@@ -11,7 +13,7 @@ pnpm start    # serve production build
 pnpm lint     # eslint
 ```
 
-Package manager is **pnpm** (see `pnpm-lock.yaml`, `pnpm-workspace.yaml`). No test suite.
+Package manager is **pnpm**. No test suite.
 
 ## Architecture
 
@@ -28,22 +30,34 @@ Package manager is **pnpm** (see `pnpm-lock.yaml`, `pnpm-workspace.yaml`). No te
   const { locale } = await params;
   const dataText = await getDictionary(locale as "th" | "en");
   ```
-- Pass `dataText` down to components as a prop; components read fields off it (e.g. `dataText.firstName`, `dataText.services[]`).
-- Adding UI text = add the key to BOTH json files, then read `dataText.<key>`.
+- Pass `dataText` down to components as a prop. Adding UI text = add the key to BOTH json files.
 
 ### Routes (all under `app/[locale]/`)
-- `page.tsx` — home (profile, experience, tech stack)
-- `project/page.tsx`, `services/page.tsx`, `services/[service]/page.tsx`, `contact/page.tsx`
-- `(blog)/study-prompt/page.tsx` — route group, no URL segment
-- `components/` — shared UI (navbar, footer, cards, switcher, techstack, experience). `experience-data.ts` holds static experience data.
+- `page.tsx` — home (profile, achievements, experience, tech stack)
+- `project/page.tsx` — two-tab view: side projects (`dataText.projects[]`) and 42 school projects (`dataText.school42Projects[]`)
+- `services/page.tsx` — lists cards from `dataText.services[]`
+- `services/[service]/page.tsx` — detail page; slug comes from `service.slug` in JSON, or auto-generated from `service.title` if absent
+- `contact/page.tsx`
+- `(blog)/study-prompt/page.tsx` — route group; `(blog)` adds no URL segment
+
+### Components
+All shared UI lives in `app/[locale]/components/`. Pages are async Server Components; components that use Framer Motion are `"use client"`.
+
+### experience-data.ts
+`components/experience-data.ts` splits data between TypeScript and dictionaries:
+- Non-translated fields (company names, hardcoded years, image paths) are hardcoded in the TS file.
+- Translated fields (descriptions, roles text, `present` label) come from `dataText` by **array index** — the array order in JSON must stay in sync with the item order in the TS functions.
+- Adding a new experience or education entry requires updating both the TS file and both JSON arrays at the same index.
 
 ### Conventions
-- Pages are async Server Components. `"use client"` components use Framer Motion for animation.
 - Import alias `@/*` → project root (tsconfig paths).
 - Images via `next/image`. Remote hosts allowlisted in `next.config.ts`: `skillicons.dev`, `api.iconify.design`. Add new remote hosts there or build fails.
 - Language switch UI: `components/switcher.tsx`.
+- `globals.css` lives at `app/[locale]/globals.css` and is imported from `layout.tsx`.
 
 ## Gotchas
 - `params` is a Promise (Next 16) — always await.
-- New translated string missing from one json = undefined at runtime, no build error. Keep both files in sync.
+- New translated string missing from one json = undefined at runtime, no build error. Keep both JSON files in sync.
 - New external image domain needs an entry in `next.config.ts` `remotePatterns`.
+- `experience-data.ts` items reference JSON arrays by index — inserting or reordering items in JSON without matching changes in the TS file silently maps wrong text.
+- Service detail URLs use the `slug` field from JSON. If `slug` is absent, it's auto-generated from `title` — keep slugs explicit and stable to avoid broken links.

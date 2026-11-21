@@ -1,7 +1,7 @@
 {
     "firstName": "นันทพงศ์",
     "lastName": "พงศ์ธำรงศักดิ์",
-    "describtion": "นักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในการพัฒนาระบบ Low-level และการประยุกต์ใช้ AI ในงาน Frontend, Backend เพื่อสร้างนวัตกรรมที่พัฒนาสังคม ควบคู่ไปกับการเป็นติวเตอร์วิชาคณิตศาสตร์และฟิสิกส์ รวมถึงเป็นที่ปรึกษาด้านการวางแผนสอบเข้ามหาวิทยาลัย  และพัฒนาศักยภาพของผู้เรียนเพื่อสร้างโอกาสทางการศึกษาที่เท่าเทียม",
+    "describtion": "นักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในการพัฒนาระบบ Low-level และการประยุกต์ใช้ AI ในงาน Frontend, Backend เพื่อสร้างนวัตกรรมที่พัฒนาสังคม ควบคู่ไปกับการเป็นที่ปรึกษาด้านการวางแผนสอบเข้ามหาวิทยาลัย เพื่อพัฒนาศักยภาพของผู้เรียนและสร้างโอกาสทางการศึกษาที่เท่าเทียม",
     "navbarProject": "โปรเจค",
     "navbarService": "บริการ",
     "navbarContact": "ติดต่อ",
@@ -74,8 +74,16 @@
     "experiences": [
         {
             "description": [
-                "พัฒนาระบบ Backend ด้วย FastAPI สำหรับวิเคราะห์ข่าว โดยใช้เทคโนโลยี Embeddings เพื่อประเมินความน่าเชื่อถือและตรวจจับข่าวปลอม",
-                "สร้างแชทบอทสำหรับวิเคราะห์ข่าวที่ผู้ใช้ส่งมา พร้อมระบบตรวจสอบข่าวปลอมแบบเรียลไทม์"
+                "ออกแบบ Tech Stack และเก็บ Requirement ร่วมกับลูกค้าสำหรับระบบแจ้งเหตุไฟป่าผ่าน LINE ส่งมอบ Proof of Concept ที่ได้รับอนุมัติให้วางแผนขึ้นใช้งานจริง",
+                "พัฒนา Backend ด้วย FastAPI และ PostgreSQL/PostGIS ที่รวมรายงานที่อยู่ใกล้กันเป็นเหตุการณ์เดียว และแจ้งเตือนจิตอาสาผ่าน LINE Messaging API"
+            ],
+            "year_started": "พ.ค. 2026",
+            "year_ended": "ปัจจุบัน",
+            "location": "แม่ฮ่องสอน, ไทย"
+        },
+        {
+            "description": [
+                "ศึกษา Codebase ของ Backend ที่เขียนด้วย Python FastAPI ซึ่งใช้ Embeddings และ pgvector เปรียบเทียบบทความข่าวเพื่อประเมินความน่าเชื่อถือ และเสนอแนวทางปรับปรุงให้ทีม"
             ],
             "year_started": "ต.ค. 2025",
             "year_ended": "พ.ย. 2025",
@@ -83,32 +91,39 @@
         },
         {
             "description": [
-                "ร่วมงานกับสตาร์ทอัพในการพัฒนาเทคโนโลยีประเมินความเสี่ยงด้านสุขภาพด้วย AI และแพลตฟอร์มการแพทย์ทางไกล (Telemedicine)",
-                "ปฏิบัติหน้าที่ตัวแทนบริษัทในการประชุมและนำเสนอโซลูชันด้านเทคโนโลยี",
-                "ประสานงานการทดสอบและตรวจสอบความถูกต้องเพื่อให้มั่นใจว่าระบบเป็นไปตามมาตรฐานอุตสาหกรรม"
+                "ออกแบบสถาปัตยกรรมแพลตฟอร์ม Telemedicine ด้วย Next.js, Supabase และ LiveKit และสร้างฟีเจอร์ประเมินความเสี่ยงด้านสุขภาพด้วย AI ผ่าน OpenAI API",
+                "วางแผนงบประมาณด้านเทคโนโลยี (~฿97K/เดือน) สำหรับช่วง MVP และ Seed รวมถึงเปรียบเทียบค่าใช้จ่ายของผู้ให้บริการ Video Call"
             ],
             "year_started": "มิ.ย. 2025",
             "year_ended": "ต.ค. 2025",
             "location": "กรุงเทพฯ, ไทย"
-        },
-        {
-            "description": [
-                "ทดสอบฟังก์ชันการทำงานของเว็บแอปพลิเคชันเพื่อให้มั่นใจว่าเป็นไปตามมาตรฐานที่กำหนด",
-                "รายงานปัญหาและข้อบกพร่องของระบบให้ทีมพัฒนาเพื่อดำเนินการปรับปรุงแก้ไข"
-            ],
-            "year_started": "เม.ย. 2023",
-            "year_ended": "มิ.ย. 2023",
-            "location": "แม่ฮ่องสอน, ไทย"
         }
     ],
     "present": "ปัจจุบัน",
     "myproject": "โปรเจคของฉัน",
     "projects": [
         {
+            "name": "ChevLab Homelab Dashboard",
+            "description": "แดชบอร์ดมอนิเตอร์ Homelab ที่ Self-host เอง พร้อม To-do Planner ที่แยกวิเคราะห์งานภาษาไทย/อังกฤษด้วย SLM ที่รันในเครื่อง (Ollama) และเปิดใช้งานอย่างปลอดภัยผ่าน Cloudflare Tunnel",
+            "techstack": [
+                "Next.js",
+                "FastAPI",
+                "PostgreSQL",
+                "Docker",
+                "Cloudflare Tunnel",
+                "Ollama"
+            ],
+            "img": "/images/projectimg/chevlab.png",
+            "src": "https://chevlab-app.chevfy.com"
+        },
+        {
             "name": "Pai Fahsai Reporter",
-            "description": "LINE Official Account บอทแจ้งเหตุไฟป่าในอำเภอปาย ส่งแจ้งเหตุพร้อมตำแหน่งและพิกัดให้จิตอาสา รับงาน ติดตาม และปิดเหตุได้ในตัว",
+            "description": "LINE Official Account บอทแจ้งเหตุไฟป่าในอำเภอปาย Backend ด้วย FastAPI + PostGIS รวมรายงานที่อยู่ใกล้กันเป็นเหตุการณ์เดียว แล้วแจ้งเตือนจิตอาสาผ่าน LINE Messaging API ให้รับงาน ติดตาม และปิดเหตุได้ในตัว",
             "techstack": [
                 "Python",
+                "FastAPI",
+                "PostgreSQL",
+                "PostGIS",
                 "LINE API"
             ],
             "img": "/images/projectimg/pai_fire_reporter.png",
@@ -181,42 +196,63 @@
         {
             "name": "Libft",
             "description": "เขียนฟังก์ชันพื้นฐานของ C standard library ขึ้นมาใหม่เอง (จัดการ string, memory และ linked list) รวมเป็น static library ไว้ใช้ต่อในโปรเจค 42 อื่นๆ",
-            "techstack": ["C", "Makefile"],
+            "techstack": [
+                "C",
+                "Makefile"
+            ],
             "src": "https://github.com/ChevFy/Libft_42_chevy"
         },
         {
             "name": "ft_printf",
             "description": "เขียนฟังก์ชัน printf ขึ้นมาเอง รองรับ format specifier (c, s, p, d, i, u, x, X, %) ด้วย variadic arguments",
-            "techstack": ["C", "Variadic Functions"],
+            "techstack": [
+                "C",
+                "Variadic Functions"
+            ],
             "src": "https://github.com/ChevFy/printf_42_chevy"
         },
         {
             "name": "push_swap",
             "description": "เรียงลำดับตัวเลขใน stack โดยใช้ 2 stack และชุดคำสั่งที่จำกัด เป้าหมายคือใช้จำนวนคำสั่งให้น้อยที่สุด",
-            "techstack": ["C", "Algorithms"],
+            "techstack": [
+                "C",
+                "Algorithms"
+            ],
             "src": "https://github.com/ChevFy/push-swap_42_chevfy"
         },
         {
             "name": "minitalk",
             "description": "โปรแกรม client-server ส่งข้อความระหว่าง process โดยใช้แค่ UNIX signal (SIGUSR1 / SIGUSR2)",
-            "techstack": ["C", "UNIX Signals"],
+            "techstack": [
+                "C",
+                "UNIX Signals"
+            ],
             "src": "https://github.com/ChevFy/minitalk_42_chevy"
         },
         {
             "name": "Philosophers",
             "description": "แก้ปัญหา Dining Philosophers ด้วย thread และ mutex พร้อมป้องกัน deadlock และ data race",
-            "techstack": ["C", "Threads", "Mutex"],
+            "techstack": [
+                "C",
+                "Threads",
+                "Mutex"
+            ],
             "src": "https://github.com/ChevFy/Philossopher_42_Chevfy"
         },
         {
             "name": "Minishell",
-            "description": "โปรเจคทีม สร้าง shell ขนาดเล็กคล้าย bash รองรับการ parse คำสั่ง, pipe, redirection, environment variable และ built-in command",
-            "techstack": ["C", "Shell", "Process"],
+            "description": "สร้าง Shell คล้าย Bash ด้วยภาษา C ร่วมกับเพื่อน โดยรับผิดชอบส่วน Executor จัดการการสร้าง Process (fork/execve), Pipe, Redirection และ Signal",
+            "techstack": [
+                "C",
+                "Shell",
+                "Process",
+                "Signals"
+            ],
             "src": "https://github.com/Wai-Theetat/Minishell"
         }
     ],
     "footer": "เว็บนี้ทำด้วย Next.js ในปี 2026",
-    "achievementsTitle": "ความสำเร็จ",
+    "achievementsTitle": "ความสำเร็จและกิจกรรม",
     "achievements": [
         {
             "title": "Young Webmaster Camp #21 (YWC21)",
@@ -224,7 +260,21 @@
             "track": "สาขา Programming",
             "description": "ได้รับการคัดเลือกเข้าร่วม Young Webmaster Camp ครั้งที่ 21 (YWC21) ค่ายพัฒนาเว็บที่มีการแข่งขันสูงระดับประเทศสำหรับนักศึกษาในประเทศไทย",
             "organization": "สมาคมผู้ดูแลเว็บไทย",
-            "year": "2026"
+            "year": "2026",
+            "img": "/images/ywc21.jpg"
+        },
+        {
+            "title": "Embedded Systems Laboratory (ESL), KMITL",
+            "status": "Cohort Lead & Academic Lead",
+            "track": "หัวหน้ารุ่นชั้นปีที่ 3",
+            "description": [
+                "ดำรงตำแหน่งหัวหน้ารุ่นชั้นปีที่ 3 และหัวหน้าฝ่ายวิชาการ จัดอบรมให้สมาชิกใหม่และสมาชิกปัจจุบัน",
+                "ร่วมพัฒนาเว็บไซต์ของแล็บ (ce-esl.com) แบบ Full-stack กับทีม 7 คน ด้วย Next.js และ NestJS"
+            ],
+            "organization": "สจล. (KMITL)",
+            "year": "ปัจจุบัน",
+            "img": "/images/esl.png",
+            "link": "https://ce-esl.com"
         }
     ]
 }
