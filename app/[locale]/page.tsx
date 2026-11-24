@@ -40,7 +40,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <Image width={40} height={40} loading="eager" src="https://api.iconify.design/line-md/tiktok.svg?color=%23ffffff" alt="TikTok" />
             </Link>
           </div>
-          <div>
+          <div className="flex flex-row gap-3 flex-wrap justify-center md:justify-start">
             <Link
               href="https://canva.link/lfg6gj8nn6vsrwg"
               target="_blank"
@@ -48,6 +48,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               className="inline-flex items-center rounded-xl bg-blue-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600"
             >
               {dataText.contactActionResume}
+            </Link>
+            <Link
+              href="https://chevfy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-xl bg-violet-500 mt-5 px-3 py-1 text-base font-semibold text-white shadow-lg transition-all hover:bg-violet-600"
+            >
+              New Website ✨
             </Link>
           </div>
         </div>
